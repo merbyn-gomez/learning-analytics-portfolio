@@ -12,6 +12,12 @@
 
 > **Important:** This PBIP was generated programmatically. The JSON is syntactically valid, but the native project has **not been opened in Power BI Desktop in this environment**. If Desktop reports a PBIR/TMDL compatibility warning, consult the manual fallback below. No .pbix is claimed to be included.
 
+## Blank canvas troubleshooting
+
+The original PBIR report JSON omitted the mandatory theme reference, which can leave Desktop showing tables but no rendered report page. This was corrected on 15 November 2026 by adding `themeCollection`, a registered base-theme package, and a base theme resource file. The report-level JSON now passes a required-field schema check, and structural regression checks run in GitHub Actions.
+
+If you opened an older download, **close Power BI Desktop without saving that blank report**. Download the latest repository ZIP (or run `git pull`) and open the project from the newly updated folder. Power BI Desktop validation is still pending.
+
 ## Page | Executive Overview
 
 - KPI cards: unique learners, enrollments, completion rate, learning hours
