@@ -8,6 +8,11 @@ A reproducible portfolio project showcasing analytics workflows for a fictional 
 
 ## Dashboard preview
 
+![Learning Analytics portfolio snapshot](assets/learning-analytics-overview.svg)
+
+**Synthetic portfolio snapshot:** 180 enrolled learners · 356 enrollments · 213 completed · 59.8% completion. This image summarizes the frozen synthetic Power BI CSV dataset; **it is not a screenshot of Power BI Desktop**, whose project opening still requires validation.
+
+
 After running the project, open **reports/dashboard.html** in any browser. The dashboard shows enrollments, learners, completions and course-level completion rates. No paid services, external APIs or third-party Python packages are required.
 
 ## Quick start

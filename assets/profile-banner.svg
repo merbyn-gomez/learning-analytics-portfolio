@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1280 360" width="1280" height="360">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#061A29"/><stop offset="0.58" stop-color="#102F47"/><stop offset="1" stop-color="#0B414E"/></linearGradient><linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#48E1D0"/><stop offset="1" stop-color="#73A1FA"/></linearGradient></defs>
+<rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+<g opacity=".22" fill="none" stroke="#72D9D6" stroke-width="2"><circle cx="1115" cy="155" r="205"/><circle cx="1115" cy="155" r="145"/><circle cx="1115" cy="155" r="90"/><path d="M855 20L1230 360M940 0L1280 310"/></g>
+<g transform="translate(940 116)"><rect x="0" y="80" width="46" height="78" rx="9" fill="#37C7BB"/><rect x="70" y="18" width="46" height="140" rx="9" fill="#5C9EEB"/><rect x="140" y="54" width="46" height="104" rx="9" fill="#80CFE0"/><path d="M0 44L75 5L150 30L225 -20" fill="none" stroke="#92F1D7" stroke-width="6" stroke-linecap="round"/><g fill="#D9FFF5"><circle cy="44" r="7"/><circle cx="75" cy="5" r="7"/><circle cx="150" cy="30" r="7"/></g></g>
+<rect x="48" y="44" width="282" height="30" rx="15" fill="#1C5762"/><text x="69" y="65" fill="#A8FADE" font-family="Segoe UI,Arial,sans-serif" font-size="14" letter-spacing="2">DATA · AUTOMATION · EDTECH</text>
+<text x="48" y="144" fill="#FFFFFF" font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="48">Merbyn Gómez Rondón</text>
+<text x="50" y="193" fill="#C3E5EF" font-family="Segoe UI,Arial,sans-serif" font-size="24">Data &amp; Automation Analyst  |  Learning Technology</text>
+<rect x="49" y="234" width="7" height="72" rx="3" fill="#44D2C4"/>
+<text x="70" y="257" fill="#FFFFFF" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600">20+ automations developed</text>
+<text x="70" y="288" fill="#B4DAE3" font-family="Segoe UI,Arial,sans-serif" font-size="16">Turning complex processes into measurable impact</text></svg>
