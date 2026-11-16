@@ -49,6 +49,11 @@ table _Measures
 		formatString: #,0
 		displayFolder: 03 · Assessments
 
+	/// Final assessments scoring less than 70.
+	measure 'Failed Final Assessments' = [Final Assessments] - [Passed Final Assessments]
+		formatString: #,0
+		displayFolder: 03 · Assessments
+
 	measure 'Final Pass Rate' = DIVIDE([Passed Final Assessments], [Final Assessments], 0)
 		formatString: 0.0%
 		displayFolder: 03 · Assessments

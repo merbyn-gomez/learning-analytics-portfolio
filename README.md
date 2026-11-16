@@ -99,4 +99,4 @@ Portfolio maintained by **Merbyn Gómez Rondón**, focused on Data & Automation 
 
 ## Power BI dashboard (editable PBIP)
 
-A complete editable Power BI report source is available in **[powerbi/](powerbi/README.md)**. It includes a five-table semantic model, DAX measures, category and region filters, and seven KPI/chart visuals backed by a synthetic public CSV snapshot. Open `powerbi/LearningAnalytics.pbip` in Power BI Desktop. The PBIP report page and its visuals were opened successfully in Power BI Desktop (user-confirmed in November 2026). The current SVG preview is an illustration, not a real screenshot.
+A complete editable Power BI report source is available in **[powerbi/](powerbi/README.md)**. It includes a five-table semantic model, DAX measures, category and region filters, and two report pages backed by a synthetic public CSV snapshot. Open `powerbi/LearningAnalytics.pbip` in Power BI Desktop. The PBIP report page and its visuals were opened successfully in Power BI Desktop (user-confirmed in November 2026). The current SVG preview is an illustration, not a real screenshot.

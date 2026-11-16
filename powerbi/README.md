@@ -1,6 +1,6 @@
-# Power BI | Learning Analytics Overview
+# Power BI | Learning Analytics: Executive & Performance
 
-**Editable Power BI Project (PBIP)** with a star-like relational semantic model, DAX measures and an executive report page.
+**Editable Power BI Project (PBIP)** with a star-like relational semantic model, DAX measures and two interactive report pages.
 
 ## Open in Power BI Desktop (Windows)
 
@@ -25,6 +25,21 @@ If you opened an older download, **close Power BI Desktop without saving that bl
 - Enrollments by status (donut)
 - Daily learning hours (line chart)
 - Course category and student region slicers
+
+## Page | Learning Performance
+
+The second report page focuses on **final assessments from completed enrollments**, excluding in-progress assessment attempts.
+
+- Four KPI cards: total final assessments, passed finals, final pass rate, and mean final score.
+- Course-level final pass rate and region-level mean final score bar charts.
+- Detailed table by course: final count, passed, failed, mean score, and pass rate.
+- Three filters: course category, student region, and age group.
+
+**Pass threshold:** an illustrative 70/100. A final pass requires an assessment with score ≥70 and a *completed* enrollment. This is a synthetic dataset, not actual LMS or institution data.
+
+**Expected unfiltered reference values:** 213 final assessments; 141 passed, 72 failed; 66.2% final pass rate; 77.0 average final score.
+
+All DAX measures preserve the current course, student region, and age-group context. The original overview page is unchanged. To test this page, open the latest \`LearningAnalytics.pbip\` in Power BI Desktop and select **Learning Performance**. Native rendering needs to be checked in Power BI Desktop.
 
 ## Model relationships
 
@@ -72,7 +87,7 @@ Open a new Power BI Desktop report and use **Get Data → Text/CSV** for each of
 
 ## Español (resumen)
 
-Abre **LearningAnalytics.pbip** en Power BI Desktop, acepta conexión anónima a los archivos CSV públicos y actualiza. Encontrarás indicadores de alumnos, matrículas, finalización y actividad por curso, con filtros de categoría y región. El contenido es completamente ficticio. Los archivos \`.tmdl\` contienen el modelo y las medidas DAX; los archivos \`.json\` definen los gráficos de Power BI.
+Abre **LearningAnalytics.pbip** en Power BI Desktop, acepta conexión anónima a los archivos CSV públicos y actualiza. Encontrarás dos páginas: **Learning Analytics Overview** para matrículas y actividad, y **Learning Performance** para evaluaciones, tasas de aprobación por curso y resultados regionales. Todas las cifras son ficticias. El contenido es completamente ficticio. Los archivos \`.tmdl\` contienen el modelo y las medidas DAX; los archivos \`.json\` definen los gráficos de Power BI.
 
 ## Verified desktop preview
 
