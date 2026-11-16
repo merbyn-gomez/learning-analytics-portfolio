@@ -1,0 +1,32 @@
+table Courses
+
+	column course_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: course_id
+
+	column course_name
+		dataType: string
+		sourceColumn: course_name
+
+	column category
+		dataType: string
+		sourceColumn: category
+
+	column duration_hours
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: duration_hours
+
+	partition Courses = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://raw.githubusercontent.com/merbyn-gomez/learning-analytics-portfolio/main/powerbi/sample-data/courses.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"course_id", Int64.Type}, {"course_name", type text}, {"category", type text}, {"duration_hours", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

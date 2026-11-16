@@ -1,0 +1,15 @@
+relationship enrollment_student
+	fromColumn: Enrollments.student_id
+	toColumn: Students.student_id
+
+relationship enrollment_course
+	fromColumn: Enrollments.course_id
+	toColumn: Courses.course_id
+
+relationship activity_enrollment
+	fromColumn: Activities.enrollment_id
+	toColumn: Enrollments.enrollment_id
+
+relationship assessment_enrollment
+	fromColumn: Assessments.enrollment_id
+	toColumn: Enrollments.enrollment_id

@@ -1,0 +1,34 @@
+table Activities
+
+	column activity_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: activity_id
+
+	column enrollment_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: enrollment_id
+
+	column activity_date
+		dataType: dateTime
+		sourceColumn: activity_date
+
+	column minutes_spent
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: minutes_spent
+
+	partition Activities = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://raw.githubusercontent.com/merbyn-gomez/learning-analytics-portfolio/main/powerbi/sample-data/activities.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"activity_id", Int64.Type}, {"enrollment_id", Int64.Type}, {"activity_date", type date}, {"minutes_spent", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

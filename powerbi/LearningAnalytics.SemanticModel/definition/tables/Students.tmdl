@@ -1,0 +1,27 @@
+table Students
+
+	column student_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: student_id
+
+	column region
+		dataType: string
+		sourceColumn: region
+
+	column age_group
+		dataType: string
+		sourceColumn: age_group
+
+	partition Students = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://raw.githubusercontent.com/merbyn-gomez/learning-analytics-portfolio/main/powerbi/sample-data/students.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"student_id", Int64.Type}, {"region", type text}, {"age_group", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

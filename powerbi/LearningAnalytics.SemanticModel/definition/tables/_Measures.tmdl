@@ -1,0 +1,55 @@
+/// Shared DAX measures for portfolio KPIs.
+table _Measures
+
+	measure 'Total Enrollments' = COUNTROWS(Enrollments)
+		formatString: #,0
+		displayFolder: 01 · Overview
+
+	measure 'Unique Learners' = DISTINCTCOUNT(Enrollments[student_id])
+		formatString: #,0
+		displayFolder: 01 · Overview
+
+	measure 'Completed Enrollments' = CALCULATE(COUNTROWS(Enrollments), Enrollments[status] = "completed")
+		formatString: #,0
+		displayFolder: 01 · Overview
+
+	measure 'Completion Rate' = DIVIDE([Completed Enrollments], [Total Enrollments], 0)
+		formatString: 0.0%
+		displayFolder: 01 · Overview
+
+	measure 'Withdrawn Enrollments' = CALCULATE(COUNTROWS(Enrollments), Enrollments[status] = "withdrawn")
+		formatString: #,0
+		displayFolder: 01 · Overview
+
+	measure 'Withdrawal Rate' = DIVIDE([Withdrawn Enrollments], [Total Enrollments], 0)
+		formatString: 0.0%
+		displayFolder: 01 · Overview
+
+	measure 'Total Learning Hours' = DIVIDE(SUM(Activities[minutes_spent]), 60, 0)
+		formatString: #,0.0
+		displayFolder: 02 · Engagement
+
+	measure 'Active Enrollments 30D' = CALCULATE(DISTINCTCOUNT(Activities[enrollment_id]), Activities[activity_date] >= DATE(2026, 10, 2), Activities[activity_date] <= DATE(2026, 10, 31))
+		formatString: #,0
+		displayFolder: 02 · Engagement
+
+	measure 'Learning Hours 30D' = CALCULATE([Total Learning Hours], Activities[activity_date] >= DATE(2026, 10, 2), Activities[activity_date] <= DATE(2026, 10, 31))
+		formatString: #,0.0
+		displayFolder: 02 · Engagement
+
+	measure 'Final Assessments' = CALCULATE(COUNTROWS(Assessments), Enrollments[status] = "completed")
+		formatString: #,0
+		displayFolder: 03 · Assessments
+
+	measure 'Average Final Score' = CALCULATE(AVERAGE(Assessments[score]), Enrollments[status] = "completed")
+		formatString: 0.0
+		displayFolder: 03 · Assessments
+
+	measure 'Passed Final Assessments' = CALCULATE(COUNTROWS(Assessments), Assessments[score] >= 70, Enrollments[status] = "completed")
+		formatString: #,0
+		displayFolder: 03 · Assessments
+
+	measure 'Final Pass Rate' = DIVIDE([Passed Final Assessments], [Final Assessments], 0)
+		formatString: 0.0%
+		displayFolder: 03 · Assessments
+

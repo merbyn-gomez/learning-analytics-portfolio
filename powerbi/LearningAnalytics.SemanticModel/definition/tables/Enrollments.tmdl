@@ -1,0 +1,43 @@
+table Enrollments
+
+	column enrollment_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: enrollment_id
+
+	column student_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: student_id
+
+	column course_id
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: course_id
+
+	column enrolled_on
+		dataType: dateTime
+		sourceColumn: enrolled_on
+
+	column completed_on
+		dataType: dateTime
+		sourceColumn: completed_on
+
+	column status
+		dataType: string
+		sourceColumn: status
+
+	partition Enrollments = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://raw.githubusercontent.com/merbyn-gomez/learning-analytics-portfolio/main/powerbi/sample-data/enrollments.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"enrollment_id", Int64.Type}, {"student_id", Int64.Type}, {"course_id", Int64.Type}, {"enrolled_on", type date}, {"completed_on", type date}, {"status", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

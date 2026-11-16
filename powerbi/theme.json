@@ -1,0 +1,29 @@
+{
+  "name": "Learning Analytics | Clean Tech",
+  "dataColors": [
+    "#168E8B",
+    "#4679B9",
+    "#765EBA",
+    "#E3A743",
+    "#E0786C"
+  ],
+  "background": "#F3F7FB",
+  "foreground": "#17324D",
+  "tableAccent": "#168E8B",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

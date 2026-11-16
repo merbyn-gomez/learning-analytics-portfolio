@@ -91,3 +91,7 @@ python -m unittest discover -s tests -v
 ---
 
 Portfolio maintained by **Merbyn Gómez Rondón**, focused on Data & Automation and Educational Technology.
+
+## Power BI dashboard (editable PBIP)
+
+A complete editable Power BI report source is available in **[powerbi/](powerbi/README.md)**. It includes a five-table semantic model, DAX measures, category and region filters, and seven KPI/chart visuals backed by a synthetic public CSV snapshot. Open `powerbi/LearningAnalytics.pbip` in Power BI Desktop. This programmatically authored PBIP has not yet been verified by Power BI Desktop.
