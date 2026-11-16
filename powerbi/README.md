@@ -10,13 +10,13 @@
 4. Click **Home → Refresh** to import the synthetic CSV snapshot from \`powerbi/sample-data/\` hosted in this public GitHub repository.
 5. Optional: **File → Save as** to save a local \`.pbix\` version.
 
-> **Important:** This PBIP was generated programmatically. The JSON is syntactically valid, but the native project has **not been opened in Power BI Desktop in this environment**. If Desktop reports a PBIR/TMDL compatibility warning, consult the manual fallback below. No .pbix is claimed to be included.
+> **Important:** This PBIP was generated programmatically. The JSON is syntactically valid, but the native project has **been opened successfully by the project owner in Power BI Desktop in November 2026**. If Desktop reports a PBIR/TMDL compatibility warning, consult the manual fallback below. No .pbix is claimed to be included.
 
 ## Blank canvas troubleshooting
 
 The original PBIR report JSON omitted the mandatory theme reference, which can leave Desktop showing tables but no rendered report page. This was corrected on 15 November 2026 by adding `themeCollection`, a registered base-theme package, and a base theme resource file. The report-level JSON now passes a required-field schema check, and structural regression checks run in GitHub Actions.
 
-If you opened an older download, **close Power BI Desktop without saving that blank report**. Download the latest repository ZIP (or run `git pull`) and open the project from the newly updated folder. Power BI Desktop validation is still pending.
+If you opened an older download, **close Power BI Desktop without saving that blank report**. Download the latest repository ZIP (or run `git pull`) and open the project from the newly updated folder. The user has since confirmed the corrected project opens and the charts render in Power BI Desktop.
 
 ## Page | Executive Overview
 
@@ -73,3 +73,9 @@ Open a new Power BI Desktop report and use **Get Data → Text/CSV** for each of
 ## Español (resumen)
 
 Abre **LearningAnalytics.pbip** en Power BI Desktop, acepta conexión anónima a los archivos CSV públicos y actualiza. Encontrarás indicadores de alumnos, matrículas, finalización y actividad por curso, con filtros de categoría y región. El contenido es completamente ficticio. Los archivos \`.tmdl\` contienen el modelo y las medidas DAX; los archivos \`.json\` definen los gráficos de Power BI.
+
+## Verified desktop preview
+
+The project owner successfully opened the corrected PBIP in Power BI Desktop and confirmed that the report page, KPI cards and charts render (November 2026). The screenshot supplied in conversation shows **180 learners, 356 enrollments, a 59.8% completion rate and approximately 1.7 thousand learning hours** from the synthetic snapshot.
+
+The README's `assets/learning-analytics-overview.svg` image is a **programmatically generated illustration**, **not** a screenshot captured from Power BI. A real screenshot will be added separately after uploading it to the repository as `assets/powerbi-desktop-overview.png`.

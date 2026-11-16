@@ -23,7 +23,7 @@ A reproducible analytics project built with **Python, SQL, SQLite and Power BI p
 
 **[Explore repository](https://github.com/merbyn-gomez/learning-analytics-portfolio)** · **[Power BI source](https://github.com/merbyn-gomez/learning-analytics-portfolio/tree/main/powerbi)** · **[CI tests](https://github.com/merbyn-gomez/learning-analytics-portfolio/actions)**
 
-> Portfolio data is entirely synthetic. The illustration is generated from the synthetic data snapshot; it is **not a Power BI Desktop screenshot**. Power BI source requires desktop validation.
+> Portfolio data is entirely synthetic. The illustration is generated from the synthetic data snapshot; it is **not a Power BI Desktop screenshot**. The report has now been opened successfully in Power BI Desktop (owner-confirmed, November 2026).
 
 ### ⚙️ Excel Automation Toolkit
 **Python · xlwings · Excel automation**
