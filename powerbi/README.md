@@ -39,7 +39,7 @@ The second report page focuses on **final assessments from completed enrollments
 
 **Expected unfiltered reference values:** 213 final assessments; 141 passed, 72 failed; 66.2% final pass rate; 77.0 average final score.
 
-All DAX measures preserve the current course, student region, and age-group context. The original overview page is unchanged. To test this page, open the latest \`LearningAnalytics.pbip\` in Power BI Desktop and select **Learning Performance**. Native rendering needs to be checked in Power BI Desktop.
+All DAX measures preserve the current course, student region, and age-group context. The original overview page is unchanged. To test this page, open the latest \`LearningAnalytics.pbip\` in Power BI Desktop and select **Learning Performance**. Both report pages have been opened and visually confirmed in Power BI Desktop (November 2026).
 
 ## Model relationships
 
@@ -89,14 +89,20 @@ Open a new Power BI Desktop report and use **Get Data → Text/CSV** for each of
 
 Abre **LearningAnalytics.pbip** en Power BI Desktop, acepta conexión anónima a los archivos CSV públicos y actualiza. Encontrarás dos páginas: **Learning Analytics Overview** para matrículas y actividad, y **Learning Performance** para evaluaciones, tasas de aprobación por curso y resultados regionales. Todas las cifras son ficticias. El contenido es completamente ficticio. Los archivos \`.tmdl\` contienen el modelo y las medidas DAX; los archivos \`.json\` definen los gráficos de Power BI.
 
-## Verified desktop preview
+## Verified Power BI Desktop screenshots
 
-The project owner successfully opened the corrected PBIP in Power BI Desktop and confirmed that the report page, KPI cards and charts render (November 2026). The screenshot supplied in conversation shows **180 learners, 356 enrollments, a 59.8% completion rate and approximately 1.7 thousand learning hours** from the synthetic snapshot.
+### Executive Overview
 
-The README's `assets/learning-analytics-overview.svg` image is a **programmatically generated illustration**, **not** a screenshot captured from Power BI. A real screenshot will be added separately after uploading it to the repository as `assets/powerbi-desktop-overview.png`.
+![Executive Overview in Power BI Desktop](../assets/learning-analytics-overview-desktop.png)
+
+### Learning Performance
+
+![Learning Performance in Power BI Desktop](../assets/learning-performance-desktop.png)
+
+Both screenshots were captured from the corrected two-page PBIP report opened in Power BI Desktop and uploaded by the project owner (November 2026). The report uses synthetic LMS data. Reference values: 180 learners, 356 enrollments and 59.8% completion on the overview; 213 final assessments, 141 passed, 66.2% pass rate and 77.0 average score on the performance page.
 
 ## Visual refinement (November 2026)
 
 Both report pages use a consistent teal/blue palette, larger labels and more legible chart headings. The Executive Overview chart regions have been expanded. Learning Performance has been reflowed to provide additional vertical space for the course assessment table; the original measures, relationships and slicers are preserved.
 
-To see the updated layout, close Desktop after saving any separate edits, download the current repository or use `git pull`, and reopen the `.pbip`. The visual changes are not yet confirmed in Desktop and should be checked on both pages. The synthetic KPI values should stay unchanged.
+To see the updated layout, close Desktop after saving any separate edits, download the current repository or use `git pull`, and reopen the `.pbip`. The refined layouts were visually confirmed by the project owner on both pages in Power BI Desktop. The synthetic KPI values should stay unchanged.

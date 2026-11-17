@@ -8,9 +8,15 @@ A reproducible portfolio project showcasing analytics workflows for a fictional 
 
 ## Dashboard preview
 
-![Learning Analytics portfolio snapshot](assets/learning-analytics-overview.svg)
+### Executive Overview — Power BI Desktop
 
-**Synthetic portfolio snapshot:** 180 enrolled learners · 356 enrollments · 213 completed · 59.8% completion. This image summarizes the frozen synthetic Power BI CSV dataset; **it is not a screenshot of Power BI Desktop**, the PBIP has now been opened successfully in Power BI Desktop (user-confirmed, November 2026).
+![Executive Overview dashboard, verified in Power BI Desktop](assets/learning-analytics-overview-desktop.png)
+
+### Learning Performance — Power BI Desktop
+
+![Learning Performance dashboard, verified in Power BI Desktop](assets/learning-performance-desktop.png)
+
+**Screenshots from Power BI Desktop (November 2026).** This Power BI demonstration uses entirely synthetic LMS data. The frozen Power BI dataset contains **180 enrolled learners, 356 enrollments, 213 completed enrollments and a 59.8% completion rate**. The Python/SQLite example is generated separately and uses a different synthetic fixture.
 
 
 After running the project, open **reports/dashboard.html** in any browser. The dashboard shows enrollments, learners, completions and course-level completion rates. No paid services, external APIs or third-party Python packages are required.
@@ -68,7 +74,7 @@ Python standard library (sqlite3, csv, random, datetime, pathlib, unittest), SQL
 
 ## Future improvements
 
-- Add an authentic Power BI Desktop screenshot to `assets/` (the current SVG is an illustration)
+- Further develop retention/cohort analysis and learner outcome explanations
 - Cohort retention and learning-path analysis
 - Data-quality checks and a semantic KPI dictionary
 - LMS event ingestion with an anonymized schema
@@ -99,4 +105,4 @@ Portfolio maintained by **Merbyn Gómez Rondón**, focused on Data & Automation 
 
 ## Power BI dashboard (editable PBIP)
 
-A complete editable Power BI report source is available in **[powerbi/](powerbi/README.md)**. It includes a five-table semantic model, DAX measures, category and region filters, and two report pages backed by a synthetic public CSV snapshot. Open `powerbi/LearningAnalytics.pbip` in Power BI Desktop. The PBIP report page and its visuals were opened successfully in Power BI Desktop (user-confirmed in November 2026). The current SVG preview is an illustration, not a real screenshot.
+A complete editable Power BI report source is available in **[powerbi/](powerbi/README.md)**. It includes a five-table semantic model, DAX measures, category and region filters, and two report pages backed by a synthetic public CSV snapshot. Open `powerbi/LearningAnalytics.pbip` in Power BI Desktop. Both PBIP report pages and their visuals were opened successfully in Power BI Desktop (owner-confirmed in November 2026). Both pages are shown above using actual Power BI Desktop screenshots, provided by the project owner.
