@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "daily_learning_hours",
   "position": {
-    "x": 1355,
-    "y": 431,
+    "x": 1382,
+    "y": 406,
     "z": 200,
-    "width": 530,
-    "height": 555,
+    "width": 505,
+    "height": 590,
     "tabOrder": 300
   },
   "visual": {
@@ -54,27 +54,57 @@
       }
     },
     "objects": {
-      "title": [
+      "lineStyles": [
         {
           "properties": {
-            "show": {
+            "strokeWidth": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "3D"
                 }
               }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Daily learning activity'"
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "defaultColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#268AC1'"
+                    }
+                  }
                 }
               }
-            },
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Total Learning Hours"
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
+                  "Value": "11D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4C657A'"
+                    }
+                  }
                 }
               }
             }
@@ -146,6 +176,117 @@
               "expr": {
                 "Literal": {
                   "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Learning activity over time'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold, Segoe UI, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#18364D'"
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total hours of activity by day'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#60768A'"
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
                 }
               }
             }

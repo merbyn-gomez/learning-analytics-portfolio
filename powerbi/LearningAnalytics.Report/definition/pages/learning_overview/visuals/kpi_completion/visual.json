@@ -3,10 +3,10 @@
   "name": "kpi_completion",
   "position": {
     "x": 985,
-    "y": 210,
+    "y": 205,
     "z": 200,
     "width": 441,
-    "height": 160,
+    "height": 148,
     "tabOrder": 300
   },
   "visual": {
@@ -55,7 +55,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
                 }
               }
             },
@@ -79,7 +79,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "34D"
+                  "Value": "35D"
                 }
               }
             },
