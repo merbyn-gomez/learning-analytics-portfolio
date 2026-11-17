@@ -3,7 +3,7 @@
   "name": "performance_table_title",
   "position": {
     "x": 42,
-    "y": 777,
+    "y": 744,
     "z": 100,
     "width": 1100,
     "height": 31,
@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "Detailed assessment outcomes by course",
+                    "value": "ASSESSMENT BREAKDOWN BY COURSE",
                     "textStyle": {
-                      "fontFamily": "Segoe UI",
-                      "fontSize": "17pt",
-                      "color": "#17324D",
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "14pt",
+                      "color": "#138E83",
                       "fontWeight": "bold"
                     }
                   }

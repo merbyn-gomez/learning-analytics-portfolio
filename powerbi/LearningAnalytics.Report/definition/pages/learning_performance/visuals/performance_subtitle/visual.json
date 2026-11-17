@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "LMS demo · Synthetic data · Final assessments from completed enrollments",
+                    "value": "Final assessment outcomes and regional performance  |  Synthetic LMS data",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "13pt",
+                      "fontSize": "14pt",
                       "color": "#627C90",
                       "fontWeight": "normal"
                     }

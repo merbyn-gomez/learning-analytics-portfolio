@@ -3,10 +3,10 @@
   "name": "performance_age_filter",
   "position": {
     "x": 1625,
-    "y": 115,
+    "y": 110,
     "z": 280,
     "width": 245,
-    "height": 70,
+    "height": 69,
     "tabOrder": 360
   },
   "visual": {

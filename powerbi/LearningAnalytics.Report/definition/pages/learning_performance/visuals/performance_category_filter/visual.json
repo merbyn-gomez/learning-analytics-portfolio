@@ -3,10 +3,10 @@
   "name": "performance_category_filter",
   "position": {
     "x": 1085,
-    "y": 115,
+    "y": 110,
     "z": 280,
     "width": 245,
-    "height": 70,
+    "height": 69,
     "tabOrder": 360
   },
   "visual": {

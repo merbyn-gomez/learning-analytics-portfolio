@@ -94,3 +94,9 @@ Abre **LearningAnalytics.pbip** en Power BI Desktop, acepta conexión anónima a
 The project owner successfully opened the corrected PBIP in Power BI Desktop and confirmed that the report page, KPI cards and charts render (November 2026). The screenshot supplied in conversation shows **180 learners, 356 enrollments, a 59.8% completion rate and approximately 1.7 thousand learning hours** from the synthetic snapshot.
 
 The README's `assets/learning-analytics-overview.svg` image is a **programmatically generated illustration**, **not** a screenshot captured from Power BI. A real screenshot will be added separately after uploading it to the repository as `assets/powerbi-desktop-overview.png`.
+
+## Visual refinement (November 2026)
+
+Both report pages use a consistent teal/blue palette, larger labels and more legible chart headings. The Executive Overview chart regions have been expanded. Learning Performance has been reflowed to provide additional vertical space for the course assessment table; the original measures, relationships and slicers are preserved.
+
+To see the updated layout, close Desktop after saving any separate edits, download the current repository or use `git pull`, and reopen the `.pbip`. The visual changes are not yet confirmed in Desktop and should be checked on both pages. The synthetic KPI values should stay unchanged.

@@ -3,10 +3,10 @@
   "name": "kpi_passed",
   "position": {
     "x": 510,
-    "y": 204,
+    "y": 190,
     "z": 220,
     "width": 441,
-    "height": 155,
+    "height": 151,
     "tabOrder": 322
   },
   "visual": {
@@ -55,7 +55,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
                 }
               }
             },
@@ -79,7 +79,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "34D"
+                  "Value": "35D"
                 }
               }
             },
