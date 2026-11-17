@@ -3,10 +3,10 @@
   "name": "score_by_region",
   "position": {
     "x": 980,
-    "y": 377,
+    "y": 367,
     "z": 270,
     "width": 905,
-    "height": 355,
+    "height": 325,
     "tabOrder": 450
   },
   "visual": {
